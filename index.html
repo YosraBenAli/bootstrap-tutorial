@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Shop Homepage</title>
+
+    <!--BootstrapCSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Optional Bootstrap theme-->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!--FontAwesomeCSS-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <style>
+        .list-group-small {
+            width: 250px;
+        }
+    </style>
+
 </head>
+
 <body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Brand</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Drafts</a></li>
+                        <li><a href="#">Sent Items</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Trash</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div><!--//container-->
+</nav>
+<!--//navbar-->
+<!--main-->
+<div class="container" style="padding-top: 70px">
+    <div class="row">
+        <div class="col-sm-3">
+            <h1>Shop Name</h1>
+            <br>
+            <div class="list-group list-group-small">
+                <a href="#" class="list-group-item">Clothes<span class="fa fa-shopping-bag pull-right"></span></a>
+                <a href="#" class="list-group-item">Shoes<span class="fa fa-shopping-bag pull-right"></span></a>
+                <a href="#" class="list-group-item">Accessories<span class="fa fa-shopping-bag pull-right"></span></a>
+                <a href="#" class="list-group-item">Make-up<span class="fa fa-shopping-bag pull-right"></span></a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img src="images/nature.jpg" class="img-responsive" alt="nature">
+        </div>
+    </div>
+</div>
+<!--//main-->
+<!--footer-->
+<footer align="center" >
+    Copyright &copy; Bootstrap 3 Tutorial
+</footer>
+<!--//footer-->
+
+
+<!--jQuery-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--Bootstrap JavaScript-->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
