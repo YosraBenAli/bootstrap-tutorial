@@ -1,1 +1,1 @@
-# bootstrap-tutorial
+# Bootstrap 3 tutorial
